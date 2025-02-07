@@ -22,7 +22,7 @@ public class AddOddEven{
   System.out.println("Odd : "+odd+"\nEven : "+even);
     }catch(FileNotFoundException e){
       System.out.println("Error : File not found.");
-      e.printStachTrace();
+      e.printStackTrace();
     }
   }
 }
