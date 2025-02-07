@@ -3,7 +3,7 @@ import java.util.*;
 public class AddOddEven{
   public static void main(String args[]){
     File file = new File("input.txt");
-    Scanner obj = new Scanner(System.in);
+    Scanner obj = new Scanner(file);
     System.out.println("Enter the size of the array : ");
     int size = obj.nextInt();
     int arr[] = new int[size];
