@@ -2,6 +2,7 @@ import java.io.File;
 import java.util.*;
 public class AddOddEven{
   public static void main(String args[]){
+    try{
     File file = new File("input.txt");
     Scanner obj = new Scanner(file);
     System.out.println("Enter the size of the array : ");
@@ -19,5 +20,9 @@ public class AddOddEven{
         }
     }
   System.out.println("Odd : "+odd+"\nEven : "+even);
+    }catch(FileNotFoundException e){
+      System.out.println("Error : File not found.");
+      e.printStachTrace();
+    }
   }
 }
