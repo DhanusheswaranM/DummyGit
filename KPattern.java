@@ -1,8 +1,10 @@
 import java.util.*;
+import java.io.FileNotException;
 import java.io.File;
 public class KPattern {
 	public static void main(String args[]) {
-  File file1 = new File("inputk.txt");
+		try{
+ 		File file1 = new File("inputk.txt");
 		Scanner obj = new Scanner (file1);
 		int n = obj.nextInt();
 		
@@ -17,6 +19,10 @@ public class KPattern {
 				System.out.print("* ");
 			}
 			System.out.print("\n");
+		}
+		}catch(FileNotFoundException e){
+			System.out.println("Error : File not found.");
+			e.printStackTrace();
 		}
 	}
 }
