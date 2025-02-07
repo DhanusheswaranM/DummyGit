@@ -8,7 +8,7 @@ public class AddOddEven{
     int size = obj.nextInt();
     int arr[] = new int[size];
     int odd = 0 ,even = 0;
-    System.lut.println("Enter the elements in tha array : ");
+    System.out.println("Enter the elements in tha array : ");
     for(int i= 0 ; i < size ; i++){
         arr[i] = obj.nextInt();
         if(arr[i]%2 == 0){
