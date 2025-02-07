@@ -1,5 +1,5 @@
 import java.util.*;
-import java.io.FileNotException;
+import java.io.FileNotFoundException;
 import java.io.File;
 public class KPattern {
 	public static void main(String args[]) {
