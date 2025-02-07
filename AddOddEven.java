@@ -1,7 +1,7 @@
 import java.io.File;
 import java.util.*;
 public class AddOddEven{
-  public static void main(String args)[]{
+  public static void main(String args[]){
     File file = new File("input.txt");
     Scanner obj = new Scanner(System.in);
     System.out.println("Enter the size of the array : ");
