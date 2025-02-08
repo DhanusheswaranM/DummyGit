@@ -76,15 +76,61 @@ class Electrical extends Product{
 public class OnlineShopping {
 	public static void main(String args[]) {
     try{
+		int id,warranty;
+        	String name , brand , color,  material ;
+        	double amount ;
+        	char size ;
 		Scanner obj = new Scanner(System.in);
-		
-		Electrical electrical = new Electrical(22, "LED bub" , 120.5 , "philips" , "Yellow");
+	    	
+	    	System.out.println("***Enter the Electrical product information***");
+	    
+	    	System.out.println("Enter the id :");
+	    	id = obj.nextInt();
+	    	obj.nextLine();
+	    	System.out.println("Enter the name of the product :");
+	    	name = obj.nextLine();
+	    	System.out.println("Enter the amount :");
+	    	amount = obj.nextDouble();
+	    	obj.nextLine();
+	    	System.out.println("Enter the brand :");
+	    	brand = obj.nextLine();
+	    	System.out.println("Enter the color :");
+	    	color = obj.nextLine();
+	    	
+		Electrical electrical = new Electrical(id , name , amount , brand , color);
 		electrical.displayInfo();
 
-		Electronics electronics = new Electronics(22, "Smart TV" , 80000 , 5);
+	    	System.out.println("***Enter the Electronics product information***");
+	    
+	    	System.out.println("Enter the id :");
+	    	id = obj.nextInt();
+	    	obj.nextLine();
+	    	System.out.println("Enter the name of the product :");
+	    	name = obj.nextLine();
+	    	System.out.println("Enter the amount :");
+	    	amount = obj.nextDouble();
+	    	System.out.println("Enter the Warranty :");
+	    	warranty = obj.nextInt();
+	    	
+		Electronics electronics = new Electronics(id , name , amount , warranty);
 		electronics.displayInfo();
-		
-		Clothing cloth = new Clothing(25 , "PeterEngland" , 2500 , 'M' , "Cotton");
+
+	    	System.out.println("***Enter the Clothing product information***");
+	    
+	    	System.out.println("Enter the id :");
+	    	id = obj.nextInt();
+	    	obj.nextLine();
+	    	System.out.println("Enter the name of the product :");
+	    	name = obj.nextLine();
+	    	System.out.println("Enter the amount :");
+	    	amount = obj.nextDouble();
+	    	obj.nextLine();
+	    	System.out.println("Enter the size :");
+	    	size = obj.next().charAt(0);
+	    	obj.nextLine();
+	    	System.out.println("Enter the material :");
+	    	material = obj.nextLine();
+		Clothing cloth = new Clothing(id , name , amount , size , material);
 		cloth.displayInfo();
 
     }catch(FileNotFoundException e){
