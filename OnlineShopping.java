@@ -75,12 +75,13 @@ class Electrical extends Product{
 }
 public class OnlineShopping {
 	public static void main(String args[]) {
+		File file4 = new File("inputOnlineShopping.txt");
     try{
 		int id,warranty;
         	String name , brand , color,  material ;
         	double amount ;
         	char size ;
-		Scanner obj = new Scanner(System.in);
+		Scanner obj = new Scanner(file4);
 	    	
 	    	System.out.println("***Enter the Electrical product information***");
 	    
