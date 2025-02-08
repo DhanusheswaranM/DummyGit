@@ -1,1 +1,14 @@
-
+30
+LED bulb
+135
+Philips
+White
+35
+Monitor
+35000
+3
+42
+T-shirt
+750
+M
+Cotton
